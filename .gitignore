@@ -1,5 +1,56 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
+__pycache__/Here's the complete code for the Email2PhoneNumber tool:
+import argparse
+import re
+
+def search_social_media(email):
+    # Perform social media searches
+    # Example: Search Facebook, LinkedIn, Twitter, etc.
+    # Return any found phone numbers
+    return []
+
+def search_people_search_engines(email):
+    # Perform searches on people search engines
+    # Example: Search Pipl, Whitepages, Spokeo, etc.
+    # Return any found phone numbers
+    return []
+
+def search_data_breaches(email):
+    # Check data breach databases
+    # Example: Search HaveIBeenPwned, DeHashed, etc.
+    # Return any found phone numbers
+    return []
+
+def main():
+    parser = argparse.ArgumentParser(description='Find phone numbers associated with an email address')
+    parser.add_argument('--email', required=True, help='Email address to search')
+    
+    args = parser.parse_args()
+    
+    email = args.email
+    
+    phone_numbers = []
+    
+    # Perform various OSINT techniques
+    phone_numbers.extend(search_social_media(email))
+    phone_numbers.extend(search_people_search_engines(email))
+    phone_numbers.extend(search_data_breaches(email))
+    
+    # Remove duplicate phone numbers
+    phone_numbers = list(set(phone_numbers))
+    
+    if phone_numbers:
+        print(f"Phone numbers associated with {email}:")
+        for phone_number in phone_numbers:
+            print(phone_number)
+    else:
+        print(f"No phone numbers found for {email}")
+
+if __name__ == '__main__':
+    main()
+This script provides a basic structure for the Email2PhoneNumber tool. It uses argparse to accept an email address as input and then performs various OSINT techniques to find associated phone numbers. The search_social_media, search_people_search_engines, and search_data_breaches functions are placeholders where you would implement the actual search logic for each technique. You would need to integrate with the respective APIs or perform web scraping to retrieve phone numbers from those sources 
+Type a message...
+
 *.py[cod]
 *$py.class
 
