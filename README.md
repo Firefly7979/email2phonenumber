@@ -1,6 +1,6 @@
 # email2phonenumber
 this powfulltool will allow you to pull phone from emails just needs python to be installed 
-Here's the installation process and usage instructions for the Email2PhoneNumber tool: Installation:
+Here's the installation process and usage instructions for the Email2PhoneNumber tool: Installation://////////.//......
 sudo apt install git python3
 git clone https://github.com/TheRealDalunacrobatics/Email2PhoneNumber.git
 cd Email2PhoneNumber
